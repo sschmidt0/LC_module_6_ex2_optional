@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import { switchRoutes } from './routes';
 import {
   ActorScene,
+  ActorsScene,
   HomeScene,
   HotelCollectionScene,
   HotelScene,
@@ -18,7 +19,8 @@ export const RouterComponent: React.FunctionComponent = () => {
         />
         <Route path={switchRoutes.createHotel} element={<HotelScene />} />
         <Route path={switchRoutes.editHotel} element={<HotelScene />} />
-        <Route path={switchRoutes.actors} element={<ActorScene />} />
+        <Route path={switchRoutes.actor} element={<ActorScene />} />
+        <Route path={switchRoutes.actors} element={<ActorsScene />} />
         <Route path={switchRoutes.root} element={<HomeScene />} />
       </Routes>
     </HashRouter>
