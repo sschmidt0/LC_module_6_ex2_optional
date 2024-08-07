@@ -1,5 +1,5 @@
+import { ActorApi } from 'core/api-models';
 import { ActorVm } from './actors.vm';
-import { ActorApi } from './api/actors.api-model';
 
 export const mapActorsApiToVm = (actors: ActorApi[]) => {
   if (!Array.isArray(actors)) return [];
