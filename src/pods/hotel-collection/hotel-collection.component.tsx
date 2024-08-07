@@ -6,6 +6,7 @@ import * as classes from './hotel-collection.styles';
 
 interface Props {
   hotelCollection: HotelEntityVm[];
+  navigateToHome: () => void;
   onCreateHotel: () => void;
   onEdit: (id: string) => void;
   onDelete: (id: string) => void;
@@ -14,10 +15,14 @@ interface Props {
 export const HotelCollectionComponent: React.FunctionComponent<Props> = (
   props
 ) => {
-  const { hotelCollection, onCreateHotel, onEdit, onDelete } = props;
+  const { hotelCollection, navigateToHome, onCreateHotel, onEdit, onDelete } =
+    props;
 
   return (
     <div className={classes.root}>
+      <Button onClick={navigateToHome} style={{ display: 'block' }}>
+        HOME
+      </Button>
       <Button variant="contained" color="primary" onClick={onCreateHotel}>
         Add hotel
       </Button>

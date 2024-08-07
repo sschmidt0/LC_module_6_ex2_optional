@@ -26,9 +26,14 @@ export const HotelCollectionContainer = () => {
     loadHotelCollection();
   };
 
+  const navigateToHome = () => {
+    navigate(linkRoutes.root);
+  };
+
   return (
     <HotelCollectionComponent
       hotelCollection={hotelCollection}
+      navigateToHome={navigateToHome}
       onCreateHotel={handleCreateHotel}
       onEdit={handleEdit}
       onDelete={handleDelete}

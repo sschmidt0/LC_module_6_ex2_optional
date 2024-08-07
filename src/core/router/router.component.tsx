@@ -4,6 +4,7 @@ import { switchRoutes } from './routes';
 import {
   ActorScene,
   ActorsScene,
+  BestSentencesScene,
   HomeScene,
   HotelCollectionScene,
   HotelScene,
@@ -21,6 +22,10 @@ export const RouterComponent: React.FunctionComponent = () => {
         <Route path={switchRoutes.editHotel} element={<HotelScene />} />
         <Route path={switchRoutes.actor} element={<ActorScene />} />
         <Route path={switchRoutes.actors} element={<ActorsScene />} />
+        <Route
+          path={switchRoutes.characters}
+          element={<BestSentencesScene />}
+        />
         <Route path={switchRoutes.root} element={<HomeScene />} />
       </Routes>
     </HashRouter>

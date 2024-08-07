@@ -12,9 +12,19 @@ export const ActorsContainer = () => {
     navigate(linkRoutes.actor(id));
   };
 
+  const navigateToHome = () => {
+    navigate(linkRoutes.root);
+  };
+
   if (isLoading) return <div>Loading...</div>;
 
   if (isError) return <div>An error has occured.</div>;
 
-  return <ActorsComponent actors={actors} onClick={handleClick} />;
+  return (
+    <ActorsComponent
+      actors={actors}
+      navigateToHome={navigateToHome}
+      onClick={handleClick}
+    />
+  );
 };
