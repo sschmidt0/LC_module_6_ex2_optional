@@ -4,7 +4,6 @@ export interface Link {
 }
 
 export const links: Link[] = [
-  { id: 'hotelCollection', text: 'Hotel Collection' },
   { id: 'actors', text: 'Rick & Morty' },
   { id: 'characters', text: 'Best Sentences' },
 ];
