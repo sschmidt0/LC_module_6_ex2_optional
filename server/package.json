@@ -4,7 +4,8 @@
   "description": "Hotel API",
   "main": "index.js",
   "scripts": {
-    "mock-server": "json-server --routes ./config/routes.json --watch mock-data/hotels-data.json --middlewares ./config/hotel.middleware.js --no-delete-cascade"
+    "mock-server": "json-server --routes ./config/routes.json --watch mock-data/hotels-data.json --middlewares ./config/hotel.middleware.js --no-delete-cascade",
+    "backend-server": "json-server --watch db.json --port 8000"
   },
   "author": "Lemoncode",
   "license": "MIT",

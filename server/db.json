@@ -22,7 +22,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/21",
       "created": "2017-11-04T22:39:48.055Z",
-      "bestSentences": ""
+      "bestSentence": "the sun will shine today"
     },
     {
       "id": 22,
@@ -47,7 +47,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/22",
       "created": "2017-11-04T22:41:07.171Z",
-      "bestSentences": ""
+      "bestSentence": "hola"
     },
     {
       "id": 23,
@@ -74,7 +74,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/23",
       "created": "2017-11-05T08:43:05.095Z",
-      "bestSentences": ""
+      "bestSentence": "Am I an alien??"
     },
     {
       "id": 24,
@@ -97,7 +97,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/24",
       "created": "2017-11-05T08:48:30.776Z",
-      "bestSentences": ""
+      "bestSentence": "armagheadoooon"
     },
     {
       "id": 25,
@@ -120,7 +120,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/25",
       "created": "2017-11-05T08:54:29.343Z",
-      "bestSentences": ""
+      "bestSentence": "aaa"
     },
     {
       "id": 26,
@@ -143,7 +143,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/26",
       "created": "2017-11-05T08:56:46.165Z",
-      "bestSentences": ""
+      "bestSentence": "dunno"
     },
     {
       "id": 27,
@@ -167,7 +167,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/27",
       "created": "2017-11-05T08:59:07.457Z",
-      "bestSentences": ""
+      "bestSentence": "sentences are crazy"
     },
     {
       "id": 28,
@@ -192,7 +192,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/28",
       "created": "2017-11-05T09:02:16.595Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 29,
@@ -215,7 +215,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/29",
       "created": "2017-11-05T09:06:19.644Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 30,
@@ -238,7 +238,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/30",
       "created": "2017-11-05T09:13:16.483Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 31,
@@ -261,7 +261,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/31",
       "created": "2017-11-05T09:15:11.286Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 32,
@@ -284,7 +284,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/32",
       "created": "2017-11-05T09:18:04.184Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 33,
@@ -307,7 +307,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/33",
       "created": "2017-11-05T09:21:55.595Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 34,
@@ -332,7 +332,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/34",
       "created": "2017-11-05T09:24:04.748Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 35,
@@ -358,7 +358,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/35",
       "created": "2017-11-05T09:27:38.491Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 36,
@@ -381,7 +381,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/36",
       "created": "2017-11-05T09:31:08.952Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 37,
@@ -404,7 +404,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/37",
       "created": "2017-11-05T09:38:22.960Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 38,
@@ -434,7 +434,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/38",
       "created": "2017-11-05T09:48:44.230Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 39,
@@ -457,7 +457,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/39",
       "created": "2017-11-05T09:52:31.777Z",
-      "bestSentences": ""
+      "bestSentence": ""
     },
     {
       "id": 40,
@@ -480,7 +480,7 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/40",
       "created": "2017-11-05T10:02:26.701Z",
-      "bestSentences": ""
+      "bestSentence": ""
     }
   ]
 }
