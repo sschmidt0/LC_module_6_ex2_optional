@@ -18,3 +18,14 @@ export interface ActorApi {
   url: string;
   created: string;
 }
+
+export interface ActorsGQLApi {
+  characters: {
+    results: ActorGQLApi[];
+  };
+}
+
+interface ActorGQLApi {
+  id: string;
+  name: string;
+}
