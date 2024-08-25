@@ -3,14 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { ActorsComponent } from './actors.component';
 import { useActors, useDebounce } from './actors.hook';
 import { linkRoutes } from 'core/router';
-import { useQuery } from '@apollo/client';
-import { GET_ACTORS_GQL } from './api/actors.api';
 
 export const ActorsContainer = () => {
   const [name, setName] = React.useState('');
+  const [page, setPage] = React.useState(1);
   const navigate = useNavigate();
   const debouncedQuery = useDebounce(name, 500);
-  const { actors, isError, isLoading } = useActors(debouncedQuery);
+  const { actors, isError, isLoading } = useActors(debouncedQuery, page);
 
   const handleClick = (id: string) => {
     navigate(linkRoutes.actor(id));
@@ -28,6 +27,8 @@ export const ActorsContainer = () => {
     <ActorsComponent
       actors={actors}
       navigateToHome={navigateToHome}
+      page={page}
+      onPage={setPage}
       onClick={handleClick}
       name={name}
       onChangeName={setName}

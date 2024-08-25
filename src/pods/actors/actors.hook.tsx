@@ -8,7 +8,7 @@ import { mapActorsApiToVm, mapActorsGQLApiToVm } from './actors.mappers';
 import { ActorVm } from './actors.vm';
 import { useQuery } from '@apollo/client';
 
-export const useActors = (name: string) => {
+export const useActors = (name: string, page: number = 1) => {
   // from first exercise, therefore also unsed imports
   // const [actors, setActors] = React.useState<ActorVm[]>([]);
   // const [isLoading, setIsLoading] = React.useState(true);
@@ -33,7 +33,7 @@ export const useActors = (name: string) => {
 
   // const { data, loading, error } = useQuery(GET_ACTORS_GQL);
   const { data, loading, error } = useQuery(GET_FILTERED_ACTORS_GQL, {
-    variables: { filter: { name: name } },
+    variables: { filter: { name: name }, page: page },
   });
 
   return {

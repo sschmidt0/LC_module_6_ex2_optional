@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { ActorVm } from './actors.vm';
-import { Button, TextField } from '@mui/material';
+import { Button, Pagination, TextField } from '@mui/material';
 
 export interface ActorsComponentProps {
   actors: ActorVm[];
   name: string;
+  page: number;
+  onPage: (page: number) => void;
   onChangeName: (name: string) => void;
   navigateToHome: () => void;
   onClick: (id: string) => void;
@@ -13,12 +15,21 @@ export interface ActorsComponentProps {
 export const ActorsComponent = ({
   actors,
   name,
+  page,
   onChangeName,
+  onPage,
   navigateToHome,
   onClick,
 }: ActorsComponentProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChangeName(e.target.value);
+  };
+
+  const handlePageChange = (
+    _event: React.ChangeEvent<unknown>,
+    value: number
+  ) => {
+    onPage(value);
   };
 
   return (
@@ -47,6 +58,12 @@ export const ActorsComponent = ({
           </li>
         ))}
       </ul>
+      <Pagination
+        count={42}
+        color="primary"
+        page={page}
+        onChange={handlePageChange}
+      />
     </>
   );
 };
