@@ -19,3 +19,14 @@ export const GET_ACTORS_GQL = gql`
     }
   }
 `;
+
+export const GET_FILTERED_ACTORS_GQL = gql`
+  query ($filter: FilterCharacter) {
+    characters(filter: $filter) {
+      results {
+        name
+        id
+      }
+    }
+  }
+`;

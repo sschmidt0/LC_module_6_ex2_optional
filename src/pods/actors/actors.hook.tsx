@@ -1,10 +1,14 @@
 import * as React from 'react';
-import { GET_ACTORS_GQL, getActors } from './api/actors.api';
+import {
+  GET_ACTORS_GQL,
+  GET_FILTERED_ACTORS_GQL,
+  getActors,
+} from './api/actors.api';
 import { mapActorsApiToVm, mapActorsGQLApiToVm } from './actors.mappers';
 import { ActorVm } from './actors.vm';
 import { useQuery } from '@apollo/client';
 
-export const useActors = () => {
+export const useActors = (name: string) => {
   // from first exercise, therefore also unsed imports
   // const [actors, setActors] = React.useState<ActorVm[]>([]);
   // const [isLoading, setIsLoading] = React.useState(true);
@@ -27,11 +31,30 @@ export const useActors = () => {
   //   fetchActors();
   // }, []);
 
-  const { data, loading, error } = useQuery(GET_ACTORS_GQL);
+  // const { data, loading, error } = useQuery(GET_ACTORS_GQL);
+  const { data, loading, error } = useQuery(GET_FILTERED_ACTORS_GQL, {
+    variables: { filter: { name: name } },
+  });
 
   return {
     actors: mapActorsGQLApiToVm(data),
     isLoading: loading,
     isError: error,
   };
+};
+
+export const useDebounce = (value, delay) => {
+  const [debouncedValue, setDebouncedValue] = React.useState(value);
+
+  React.useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
 };
