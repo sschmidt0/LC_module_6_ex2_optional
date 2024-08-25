@@ -5,9 +5,8 @@ import { useActor } from './actor.hook';
 
 export const ActorContainer = () => {
   const { id } = useParams<{ id: string }>();
-  const { actor, isError, isLoading } = useActor(id);
-
   const navigate = useNavigate();
+  const { actors, isError, isLoading } = useActor(id);
 
   const handleClick = () => {
     navigate(-1);
@@ -17,5 +16,5 @@ export const ActorContainer = () => {
 
   if (isError) return <div>An error has occured.</div>;
 
-  return <ActorComponent onClick={handleClick} actor={actor} />;
+  return <ActorComponent onClick={handleClick} actors={actors} />;
 };
