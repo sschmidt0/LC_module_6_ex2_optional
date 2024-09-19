@@ -23,7 +23,6 @@ export const mapActorsGQLApiToVm = (actors: ActorsByIdGQLApi): ActorVm[] => {
 export const mapActorGQLApiToVm = (
   actor: ActorsByIdGQLApi['charactersByIds'][0]
 ): ActorVm => {
-  console.log({ actor });
   return {
     id: Number(actor?.id),
     name: actor?.name,

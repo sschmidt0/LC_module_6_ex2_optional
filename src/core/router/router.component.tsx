@@ -7,20 +7,12 @@ import {
   CharacterScene,
   CharactersCollectionScene,
   HomeScene,
-  HotelCollectionScene,
-  HotelScene,
 } from 'scenes';
 
 export const RouterComponent: React.FunctionComponent = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route
-          path={switchRoutes.hotelCollection}
-          element={<HotelCollectionScene />}
-        />
-        <Route path={switchRoutes.createHotel} element={<HotelScene />} />
-        <Route path={switchRoutes.editHotel} element={<HotelScene />} />
         <Route path={switchRoutes.actor} element={<ActorScene />} />
         <Route path={switchRoutes.actors} element={<ActorsScene />} />
         <Route path={switchRoutes.editCharacter} element={<CharacterScene />} />

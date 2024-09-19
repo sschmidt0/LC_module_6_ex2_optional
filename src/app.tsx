@@ -9,6 +9,7 @@ const App: React.FunctionComponent = () => {
 };
 
 const AppProviders: React.FunctionComponent = () => {
+  console.log(client);
   return (
     <ApolloProvider client={client}>
       <ThemeProviderComponent>
